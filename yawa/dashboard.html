@@ -55,7 +55,7 @@
             <a href="#"><i class="fa-solid fa-boxes-packing"></i> Archives</a>
           </li>
           <li class="nav-item logout">
-            <a href="#"
+            <a href="signin.html"
               ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
             >
           </li>
@@ -81,9 +81,36 @@
       </div>   
       
       <div class="body">
+        <div class="header">
+          <nav class="note-bar">
+            <a href="#" class="note-branding">Notes 1</a>
+            <button class="menu-button">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </button>
+          </nav>
+        
+          <ul class="note-menu">
+            <li class="note-item">
+              <a href="#" class="note-link">Add to Favorites</a>
+            </li>
+            <li class="note-item">
+              <a href="#" class="note-link">Remove from Favorites</a>
+            </li>
+            <li class="note-item">
+              <a href="#" class="note-link delete-note">Delete Note</a>
+            </li>
+          </ul>
 
+        
+          <div class="content">
+            <textarea class="note-textarea" placeholder="Write your note here..."></textarea>
+          </div>
+        </div>
+        
+        <script src="script.js"></script>
       </div>
-      
     </div>
   </body>
 </html>
