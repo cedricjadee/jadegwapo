@@ -468,26 +468,26 @@ form input {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   display: flex;
-  flex-direction: row; /* Align notes horizontally */
-  flex-wrap: wrap; /* Allow wrapping to new lines if needed */
+  flex-direction: row;
+  flex-wrap: wrap; 
   height: 90vh;
   width: 85%;
   margin: 0;
-  overflow-y: auto; /* Allow vertical scrolling if notes exceed container height */
+  overflow-y: auto; 
 }
+
 
 .header {
   background-color: rgb(255, 255, 255);
-  width: 300px; /* Example width, adjust as needed */
-  margin: 10px; /* Add margin between notes */
-  border: 1.7px solid rgba(21, 20, 20, 0.2);
+  width: 300px;
+  margin: 10px;
+  border: 1.7px solid #bababa;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* Ensure width is maintained as 100% of parent */
 }
 
 
@@ -531,28 +531,28 @@ form input {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.00001s;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
 }
 
 .note-link:hover {
-  color: blue;
+  color: #008f76;
 }
 
 .delete-note {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.00001s;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 12px;
 }
 
 .delete-note:hover {
-  color: blue;
+  color: #008f76;
 }
 
 .dot {
@@ -616,10 +616,13 @@ form input {
   font-family: 'Roboto', sans-serif; /* Match font to your theme */
 }
 
-
-
-
-
-
-
-
+.date-label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #bababa;
+  margin-left: 10px; /* Adjust spacing as needed */
+  position: absolute;
+  bottom: 15px; /* Align with the circle indicator */
+  left: 170px; /* Position next to the circle indicator */
+  font-weight: 500;
+}
