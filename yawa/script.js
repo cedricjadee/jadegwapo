@@ -232,6 +232,16 @@ function addNewNote() {
     month: 'long',
     day: '2-digit'
   });
+  
+  const now = new Date().toLocaleTimeString('en-US', { 
+    hour: 'numeric', 
+    minute: '2-digit', 
+    hour12: true 
+  });
+  
+
+  
+  
 
   // Add the HTML content for the new header
   newHeader.innerHTML = `
@@ -260,6 +270,7 @@ function addNewNote() {
       <textarea class="note-textarea" placeholder="Write your note here..."></textarea>
       <div class="circle-indicator"></div>
       <div class="date-label">${today}</div>
+      <div class="time-label">${now}</div>
     </div>
   `;
 
@@ -348,5 +359,59 @@ function addNewNote() {
 
   // Set up delete buttons for the new notes
   setupDeleteButtons();
+
+
+  
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Function to handle adding the note to favorites
+  function addToFavorites() {
+    const bodyContent = document.querySelector(".body").innerHTML;
+    // Store the body content in local storage
+    localStorage.setItem("favoriteNote", bodyContent);
+    alert("Note added to favorites!");
+  }
+
+  // Add event listener for "Add to Favorites" link
+  document.querySelectorAll(".note-link").forEach(link => {
+    if (link.textContent === "Add to Favorites") {
+      link.addEventListener("click", addToFavorites);
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Function to handle removing the note from favorites
+  function removeFromFavorites() {
+    const bodyContent = document.querySelector(".body");
+    if (bodyContent) {
+      bodyContent.remove();
+      // Clear the favorite note from local storage
+      localStorage.removeItem("favoriteNote");
+      alert("Note removed from favorites!");
+    }
+  }
+
+  // Add event listener for "Remove from Favorites" link
+  document.querySelectorAll(".note-link").forEach(link => {
+    if (link.textContent === "Remove from Favorites") {
+      link.addEventListener("click", removeFromFavorites);
+    }
+  });
+
+  // Function to load the favorite note from local storage
+  function loadFavoriteNote() {
+    const storedNote = localStorage.getItem("favoriteNote");
+    if (storedNote) {
+      document.querySelector(".body").innerHTML = storedNote;
+    }
+  }
+
+  // Load the favorite note when the page is loaded
+  loadFavoriteNote();
+});
+
 
