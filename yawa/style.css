@@ -20,12 +20,12 @@ span {
   height: 10vh;
 }
 
-.input:focus-within{
+.input:focus-within {
   border: 1.5px solid #00b594;
 }
 
 .home h1 {
-  font-family: 'Moderustic', sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-optical-sizing: auto;
   font-weight: 750;
   font-style: normal;
@@ -35,9 +35,8 @@ span {
 }
 
 .content {
-  width: 100%; 
+  width: 100%;
 }
-
 
 .home nav {
   display: flex;
@@ -62,7 +61,7 @@ span {
   font-weight: bold;
   font-size: 22px;
   transition: color 0.0001s ease;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -102,7 +101,7 @@ nav ul li a.active {
 }
 
 .lol h2 {
-  font-family: 'Moderustic', sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-optical-sizing: auto;
   font-weight: 750;
   font-style: normal;
@@ -117,7 +116,7 @@ nav ul li a.active {
   text-align: center;
   line-height: 2;
   word-spacing: 2px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -130,7 +129,7 @@ nav ul li a.active {
   border: 2px solid transparent;
   padding: 7px 60px;
   transform: translateY(25px);
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   border-radius: 4px;
@@ -153,7 +152,7 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Moderustic', sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-optical-sizing: auto;
   font-weight: 750;
   font-style: normal;
@@ -161,7 +160,7 @@ nav ul li a.active {
 }
 
 form label {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   display: flex;
@@ -182,22 +181,21 @@ form input {
 }
 
 .input-field {
-  border: 1px solid #ccc; 
+  border: 1px solid #ccc;
   padding: 8px;
-  outline: none; 
+  outline: none;
 }
 
 .input-field:focus {
-  border-color: #008f76; 
+  border-color: #008f76;
 }
-
 
 .box {
   display: flex;
   margin-top: 10px;
 }
 
-.box input[type='checkbox'] {
+.box input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   width: 20px;
@@ -209,13 +207,13 @@ form input {
   position: relative;
 }
 
-.box input[type='checkbox']:checked {
+.box input[type="checkbox"]:checked {
   background-color: #fff;
   border-color: #008f76;
 }
 
-.box input[type='checkbox']:checked::after {
-  content: '';
+.box input[type="checkbox"]:checked::after {
+  content: "";
   position: absolute;
   top: 10%;
   width: 25px;
@@ -224,14 +222,14 @@ form input {
   clip-path: polygon(0 50%, 25% 75%, 100% 0, 75% 0, 25% 50%);
 }
 
-.box input[type='checkbox']:hover {
+.box input[type="checkbox"]:hover {
   border-color: #008f76;
 }
 
 .box p {
   margin-left: 10px;
   color: #c5c5c5;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
@@ -247,7 +245,7 @@ form input {
   justify-content: right;
   font-weight: bold;
   transition: color 0.0001s ease;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -271,7 +269,7 @@ form input {
   border: 2px solid transparent;
   padding: 7px 195px;
   transform: translateY(25px);
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   border-radius: 4px;
@@ -296,7 +294,7 @@ form input {
 }
 
 .navi h1 {
-  font-family: 'Moderustic', sans-serif;
+  font-family: "Moderustic", sans-serif;
   font-optical-sizing: auto;
   font-weight: 750;
   font-style: normal;
@@ -310,7 +308,7 @@ form input {
   color: #ffffff;
 }
 
-.nav-bar{
+.nav-bar {
   margin-bottom: 600px;
 }
 
@@ -321,7 +319,7 @@ form input {
 .nav-bar li a {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   font-style: normal;
@@ -367,39 +365,39 @@ form input {
 
 .low {
   justify-content: center;
-  display: flex; 
-  align-items: center; 
-  margin-bottom: 40px; 
-  text-align: left; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 .low img {
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   object-fit: cover;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .low div {
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-start; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.low h2{
+.low h2 {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 20px;
   font-style: normal;
 }
 
-.low h3{
+.low h3 {
   text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 17px;
   font-style: normal;
@@ -408,75 +406,75 @@ form input {
 .shesh {
   width: 85%;
   height: 10vh;
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 0 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .shesh h2 {
-  text-decoration: none; 
+  text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 25px;
-  margin: 0; 
-  position: relative; 
+  margin: 0;
+  position: relative;
 }
 
 .shesh h2::after {
-  content: ''; 
-  position: absolute; 
+  content: "";
+  position: absolute;
   left: 0px;
-  bottom: -5px; 
-  width: 87%; 
-  height: 3px; 
-  background-color: #008f76; 
+  bottom: -5px;
+  width: 87%;
+  height: 3px;
+  background-color: #008f76;
 }
 
 .search-container {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
 
 .search-bar {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   margin: 0;
 }
 
 .search-bar input {
-  width: 330px; 
-  height: 40px; 
+  width: 330px;
+  height: 40px;
   padding: 0 20px;
-  border: 1px solid #ccc; 
-  border-radius: 20px; 
-  font-size: 16px; 
-  margin-right: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-right: 15px;
 }
 
 .plus-button {
   height: 30px;
   width: 30px;
-  border: 2px solid rgb(0, 0, 0); 
-  border-radius: 50%; 
-  background-color: #ffffff; 
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer; 
+  cursor: pointer;
   margin-right: 2px;
 }
 
-.search-bar p{
-  text-decoration: none; 
+.search-bar p {
+  text-decoration: none;
   color: black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .body {
@@ -484,13 +482,12 @@ form input {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   height: 90vh;
   width: 85%;
   margin: 0;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
-
 
 .header {
   background-color: rgb(255, 255, 255);
@@ -505,7 +502,6 @@ form input {
   position: relative;
 }
 
-
 .note-bar {
   display: flex;
   justify-content: space-between;
@@ -517,7 +513,7 @@ form input {
   font-size: 16px;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
@@ -528,18 +524,18 @@ form input {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
-  width: 50%; 
+  width: 50%;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  position: absolute; 
+  position: absolute;
   top: 50px;
   right: 0;
-  z-index: 10; 
+  z-index: 10;
   list-style-type: none;
 }
 
 .note-menu.active {
-  display: flex; 
+  display: flex;
 }
 
 .note-link {
@@ -547,7 +543,7 @@ form input {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.00001s;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 12px;
 }
@@ -561,7 +557,7 @@ form input {
   font-weight: bold;
   text-decoration: none;
   transition: color 0.00001s;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 12px;
 }
@@ -594,18 +590,16 @@ form input {
 }
 
 .note-textarea {
-  width: 100%; 
-  height: 200px; 
+  width: 100%;
+  height: 200px;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  resize: none; 
-  outline: none; 
+  resize: none;
+  outline: none;
 }
-
-
 
 @media (max-width: 600px) {
   .header {
@@ -619,37 +613,158 @@ form input {
   background-color: orange;
   border-radius: 50%;
   position: absolute;
-  bottom: 15px; 
-  left: 15px; 
-  display: none; 
+  bottom: 15px;
+  left: 15px;
+  display: none;
 }
 
 .editable-input {
-  border: 1px solid #008f76; 
-  background-color: #f9f9f9; 
-  padding: 2px 5px; 
-  font-family: 'Roboto', sans-serif; 
+  border: 1px solid #008f76;
+  background-color: #f9f9f9;
+  padding: 2px 5px;
+  font-family: "Roboto", sans-serif;
 }
 
 .date-label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #bababa;
   margin-left: 10px;
   position: absolute;
   bottom: 30px;
-  left: 170px; 
+  left: 170px;
   font-weight: 500;
 }
 
 .time-label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: #bababa;
   margin-left: 10px;
   position: absolute;
   bottom: 15px;
-  left: 170px; 
+  left: 170px;
   font-weight: 500;
 }
 
+.create {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.yawa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.yew h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.yew h2 span {
+  color: #00b594;
+}
+
+.hm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.input-field-wrapper {
+  flex: 1;
+  min-width: 200px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #666;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.input-field:focus {
+  border-color: #00b594;
+  outline: none;
+}
+select {
+  transform: translateY(10px);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  height: 50px;
+}
+select.input-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff
+    url('data:image/svg+xml;utf8,<svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg"><path d="M5 6L0 0h10L5 6z" fill="%23666"/></svg>')
+    no-repeat right 15px center;
+  background-size: 12px;
+  padding-right: 40px;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00b594;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.00001s ease;
+  transform: translateY(10px);
+}
+
+.submit-btn:hover {
+  background-color: #008f76;
+}
+
+.yey a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #00b594;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.00001s ease;
+}
+
+.yey a:hover {
+  background-color: #008f76;
+}

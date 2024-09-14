@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>NoteIt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="home">
+        <h1 class="yep">Note<span>It!</span></h1>
+
+        <nav>
+          <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="" class="active">REGISTER</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="create">
+        <div class="yawa">
+          <div class="helll">
+            <div class="yew">
+              <h2 class="oye">Create an<span> Account</span></h2>
+              <p>Please fill in the details below to create your account.</p>
+            </div>
+
+            <form action="submit_registration.html" method="post" class="hm">
+              <div class="input-group">
+                <div class="input-field-wrapper">
+                  <label for="first-name">First Name</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    class="input-field"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+
+                <div class="input-field-wrapper">
+                  <label for="last-name">Last Name</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    class="input-field"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-field-wrapper">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="input-field"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+
+                <div class="input-field-wrapper">
+                  <label for="gender">Gender</label>
+                  <select
+                    id="gender"
+                    name="gender"
+                    class="input-field"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select your gender
+                    </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-field-wrapper">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="input-field"
+                    placeholder="Create a password"
+                    required
+                  />
+                </div>
+
+                <div class="input-field-wrapper">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    class="input-field"
+                    placeholder="Confirm your password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <div class="input-field-wrapper">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="input-field"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+
+                <div class="input-field-wrapper">
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" id="dob" name="dob" class="input-field" />
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">Register</button>
+            </form>
+          </div>
+
+          <div class="yey">
+            <a href="signin.html" class="eh"
+              >Already have an account? Sign In</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
