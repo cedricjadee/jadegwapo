@@ -85,7 +85,7 @@ nav ul li a.active {
 }
 
 .home-picture img {
-  width: 730px;
+  width: 530px;
   height: 580px;
   margin-right: 95px;
   margin-bottom: 50px;
@@ -145,7 +145,7 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 .yow {
@@ -174,7 +174,6 @@ form input {
   height: 50px;
   font-size: 18px;
   padding: 10px;
-  margin-top: 10px;
   box-sizing: border-box;
   border-color: #c5c5c5;
   border-radius: 4px;
@@ -261,7 +260,7 @@ form input {
   margin-bottom: 80px;
 }
 
-.eh {
+.yey .eh {
   display: inline-block;
   background-color: #00b594;
   color: #ffffff;
@@ -716,7 +715,6 @@ form label {
   outline: none;
 }
 select {
-  transform: translateY(10px);
   width: 100%;
   padding: 12px;
   border: 1px solid #ddd;

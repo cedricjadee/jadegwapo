@@ -57,7 +57,7 @@
               <p>Please fill in the details below to create your account.</p>
             </div>
 
-            <form action="submit_registration.html" method="post" class="hm">
+            <form action="signin.html" method="post" class="hm">
               <div class="input-group">
                 <div class="input-field-wrapper">
                   <label for="first-name">First Name</label>
@@ -150,12 +150,19 @@
                     name="phone"
                     class="input-field"
                     placeholder="Enter your phone number"
+                    required
                   />
                 </div>
 
                 <div class="input-field-wrapper">
                   <label for="dob">Date of Birth</label>
-                  <input type="date" id="dob" name="dob" class="input-field" />
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    class="input-field"
+                    required
+                  />
                 </div>
               </div>
 
@@ -164,7 +171,7 @@
           </div>
 
           <div class="yey">
-            <a href="signin.html" class="eh"
+            <a href="signin.html" class="oh"
               >Already have an account? Sign In</a
             >
           </div>

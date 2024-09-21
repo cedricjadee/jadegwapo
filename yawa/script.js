@@ -9,12 +9,12 @@ content.appendChild(circleIndicator); // Append it to the content div
 
 // Function to set up event listeners for delete buttons
 function setupDeleteButtons() {
-  document.querySelectorAll('.delete-note').forEach(function(deleteLink) {
-    deleteLink.addEventListener('click', function(event) {
+  document.querySelectorAll(".delete-note").forEach(function (deleteLink) {
+    deleteLink.addEventListener("click", function (event) {
       event.preventDefault();
-      
+
       // Find the closest .header element and remove it
-      const noteHeader = this.closest('.header');
+      const noteHeader = this.closest(".header");
       if (noteHeader) {
         noteHeader.remove();
       }
@@ -24,7 +24,7 @@ function setupDeleteButtons() {
 
 // Function to adjust textarea size dynamically
 function adjustTextareaSize(textarea) {
-  textarea.style.height = 'auto'; // Reset height
+  textarea.style.height = "auto"; // Reset height
   textarea.style.height = `${textarea.scrollHeight}px`; // Set height based on scroll height
 }
 
@@ -37,7 +37,9 @@ function addNewNote() {
   // Add the HTML content for the new header
   newHeader.innerHTML = `
     <nav class="note-bar">
-      <a href="#" class="note-branding">Notes ${document.querySelectorAll('.header').length + 1}</a>
+      <a href="#" class="note-branding">Notes ${
+        document.querySelectorAll(".header").length + 1
+      }</a>
       <button class="menu-button">
         <span class="dot"></span>
         <span class="dot"></span>
@@ -67,8 +69,8 @@ function addNewNote() {
   body.insertBefore(newHeader, body.firstChild);
 
   // Adjust textarea size when a new note is created
-  const newTextarea = newHeader.querySelector('.note-textarea');
-  newTextarea.addEventListener('input', function() {
+  const newTextarea = newHeader.querySelector(".note-textarea");
+  newTextarea.addEventListener("input", function () {
     adjustTextareaSize(newTextarea);
   });
 
@@ -111,18 +113,18 @@ function addNewNote() {
   });
 
   // Add the editable functionality to new note branding
-  const newNoteBranding = newHeader.querySelector('.note-branding');
-  newNoteBranding.addEventListener('dblclick', function() {
+  const newNoteBranding = newHeader.querySelector(".note-branding");
+  newNoteBranding.addEventListener("dblclick", function () {
     const currentText = this.textContent;
 
     // Create a new input element
-    const input = document.createElement('input');
-    input.type = 'text';
+    const input = document.createElement("input");
+    input.type = "text";
     input.value = currentText;
-    input.classList.add('editable-input');
+    input.classList.add("editable-input");
 
     // Replace the existing text with the input element
-    this.innerHTML = '';
+    this.innerHTML = "";
     this.appendChild(input);
 
     // Focus and select the input text
@@ -130,7 +132,7 @@ function addNewNote() {
     input.select();
 
     // Handle blur event to save the changes
-    input.addEventListener('blur', function() {
+    input.addEventListener("blur", function () {
       const newText = this.value;
 
       // Replace the input with the new text
@@ -138,8 +140,8 @@ function addNewNote() {
     });
 
     // Handle enter key to save changes
-    input.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
+    input.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
         this.blur();
       }
     });
@@ -176,20 +178,20 @@ document.querySelectorAll(".note-link").forEach((n) => {
 
 // Adjust content size
 function adjustContentSize() {
-  const content = document.querySelector('.content');
+  const content = document.querySelector(".content");
   const borderWidth = parseInt(window.getComputedStyle(content).borderWidth);
   content.style.width = `calc(100% - ${borderWidth * 2}px)`;
   content.style.height = `calc(100% - ${borderWidth * 2}px)`;
 }
 
 // Adjust size on initial load and if necessary, on window resize
-window.addEventListener('load', adjustContentSize);
-window.addEventListener('resize', adjustContentSize);
+window.addEventListener("load", adjustContentSize);
+window.addEventListener("resize", adjustContentSize);
 
 // Initial adjustment for all textareas
-document.querySelectorAll('.note-textarea').forEach((textarea) => {
+document.querySelectorAll(".note-textarea").forEach((textarea) => {
   adjustTextareaSize(textarea);
-  textarea.addEventListener('input', function() {
+  textarea.addEventListener("input", function () {
     adjustTextareaSize(textarea);
   });
 });
@@ -201,25 +203,26 @@ function filterNotes() {
   const query = searchInput.value.toLowerCase();
   const notes = document.querySelectorAll(".header");
 
-  notes.forEach(note => {
-    const noteTitle = note.querySelector(".note-branding").textContent.toLowerCase();
+  notes.forEach((note) => {
+    const noteTitle = note
+      .querySelector(".note-branding")
+      .textContent.toLowerCase();
     if (noteTitle.includes(query)) {
-      note.classList.add('expanded'); // Add class to expand width
+      note.classList.add("expanded"); // Add class to expand width
       note.style.display = "flex"; // Show matching note
     } else {
-      note.classList.remove('expanded'); // Remove class to revert width
+      note.classList.remove("expanded"); // Remove class to revert width
       note.style.display = "none"; // Hide non-matching note
     }
   });
 }
 
 // Attach event listener for "Enter" key on search input
-searchInput.addEventListener("keydown", function(event) {
+searchInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     filterNotes();
   }
 });
-
 
 function addNewNote() {
   // Create the new header div
@@ -227,26 +230,24 @@ function addNewNote() {
   newHeader.classList.add("header");
 
   // Get today's date with the desired format
-  const today = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: '2-digit'
+  const today = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "2-digit",
   });
-  
-  const now = new Date().toLocaleTimeString('en-US', { 
-    hour: 'numeric', 
-    minute: '2-digit', 
-    hour12: true 
-  });
-  
 
-  
-  
+  const now = new Date().toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
 
   // Add the HTML content for the new header
   newHeader.innerHTML = `
     <nav class="note-bar">
-      <a href="#" class="note-branding">Notes ${document.querySelectorAll('.header').length + 1}</a>
+      <a href="#" class="note-branding">Notes ${
+        document.querySelectorAll(".header").length + 1
+      }</a>
       <button class="menu-button">
         <span class="dot"></span>
         <span class="dot"></span>
@@ -279,8 +280,8 @@ function addNewNote() {
   body.insertBefore(newHeader, body.firstChild);
 
   // Adjust textarea size when a new note is created
-  const newTextarea = newHeader.querySelector('.note-textarea');
-  newTextarea.addEventListener('input', function() {
+  const newTextarea = newHeader.querySelector(".note-textarea");
+  newTextarea.addEventListener("input", function () {
     adjustTextareaSize(newTextarea);
   });
 
@@ -323,18 +324,18 @@ function addNewNote() {
   });
 
   // Add the editable functionality to new note branding
-  const newNoteBranding = newHeader.querySelector('.note-branding');
-  newNoteBranding.addEventListener('dblclick', function() {
+  const newNoteBranding = newHeader.querySelector(".note-branding");
+  newNoteBranding.addEventListener("dblclick", function () {
     const currentText = this.textContent;
 
     // Create a new input element
-    const input = document.createElement('input');
-    input.type = 'text';
+    const input = document.createElement("input");
+    input.type = "text";
     input.value = currentText;
-    input.classList.add('editable-input');
+    input.classList.add("editable-input");
 
     // Replace the existing text with the input element
-    this.innerHTML = '';
+    this.innerHTML = "";
     this.appendChild(input);
 
     // Focus and select the input text
@@ -342,7 +343,7 @@ function addNewNote() {
     input.select();
 
     // Handle blur event to save the changes
-    input.addEventListener('blur', function() {
+    input.addEventListener("blur", function () {
       const newText = this.value;
 
       // Replace the input with the new text
@@ -350,8 +351,8 @@ function addNewNote() {
     });
 
     // Handle enter key to save changes
-    input.addEventListener('keypress', function(e) {
-      if (e.key === 'Enter') {
+    input.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
         this.blur();
       }
     });
@@ -359,11 +360,7 @@ function addNewNote() {
 
   // Set up delete buttons for the new notes
   setupDeleteButtons();
-
-
-  
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   // Function to handle adding the note to favorites
@@ -375,13 +372,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Add event listener for "Add to Favorites" link
-  document.querySelectorAll(".note-link").forEach(link => {
+  document.querySelectorAll(".note-link").forEach((link) => {
     if (link.textContent === "Add to Favorites") {
       link.addEventListener("click", addToFavorites);
     }
   });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   // Function to handle removing the note from favorites
@@ -396,7 +392,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Add event listener for "Remove from Favorites" link
-  document.querySelectorAll(".note-link").forEach(link => {
+  document.querySelectorAll(".note-link").forEach((link) => {
     if (link.textContent === "Remove from Favorites") {
       link.addEventListener("click", removeFromFavorites);
     }
@@ -414,4 +410,13 @@ document.addEventListener("DOMContentLoaded", () => {
   loadFavoriteNote();
 });
 
-
+function validateForm() {
+  // Check if the form is valid
+  const form = document.querySelector(".hm");
+  if (form.checkValidity()) {
+    window.location.href = "signin.html";
+    return true; // Allow the form to submit
+  } else {
+    return false; // Prevent the form from submitting
+  }
+}
