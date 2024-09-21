@@ -768,3 +768,33 @@ select.input-field {
 .yey a:hover {
   background-color: #008f76;
 }
+
+.hakdog {
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+}
+
+.hakdog ul {
+  display: flex;
+}
+
+.hakdog ul li {
+  list-style-type: none;
+}
+
+.hakdog ul li a {
+  color: #00b594;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.0001s ease;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hakdog ul li a:hover {
+  color: #008f76;
+  text-decoration: underline;
+}
